@@ -14,7 +14,7 @@ if len(files) > 0:
     weights = files[-1]
     print(weights)
 filename = 'lyrik.txt'
-raw_text = open(filename).read()
+raw_text = open(filename, encoding='utf8').read()
 
 chars = sorted(list(set(raw_text)))
 char_to_int = dict((c, i) for i, c in enumerate(chars))
