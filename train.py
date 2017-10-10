@@ -52,4 +52,4 @@ filepath_last = 'checkpoints/last.hdf5'
 checkpoint_last = ModelCheckpoint(filepath_last, monitor='loss', verbose=0,
                                   save_best_only=True, mode='min')
 callback_list = [checkpoint, checkpoint_last]
-model.fit(X, Y, epochs=20, batch_size=128, callbacks=callback_list)
+model.fit(X, Y, epochs=20, batch_size=256, callbacks=callback_list)
